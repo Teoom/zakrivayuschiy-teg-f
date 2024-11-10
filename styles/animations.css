@@ -35,7 +35,6 @@
     transform-origin: center;
     scale: 1.5;
   }
-
 }
 
 @keyframes sparks {
@@ -43,7 +42,7 @@
   from {
     opacity: 0;
   }
-  
+
   to {
     opacity: 1;
   }

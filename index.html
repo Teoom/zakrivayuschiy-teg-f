@@ -616,22 +616,18 @@
 
       <button
         class="button-save btn"
-        aria-controls="dialog-id"
+        aria-controls="dialog-save"
         onclick="window['dialog-save'].showModal()"
       >
         <span class="save-icon" aria-hidden="true">
-          <svg
-            viewBox="0 0 21 21"
-            width="21"
-            height="21"
-          >
+          <svg viewBox="0 0 21 21" width="21" height="21">
             <use href="./svg/save.svg#save" class="save-icon-fill"></use>
           </svg>
         </span>
-        <p class="button-save__text">Сохранить на память</p>
+        <span class="button-save__text">Сохранить на память</span>
       </button>
 
-      <dialog id="dialog-save" aria-labelledby="dialog-save" class="dialog">
+      <dialog id="dialog-save" class="dialog">
         <div class="dialog__content">
           <span class="dialog__icon" aria-hidden="true">
             <svg
@@ -644,12 +640,17 @@
             </svg>
           </span>
           <p class="dialog__text">
-            Вставьте <br>
-            дискету, чтобы <br> продолжить</p>
+            Вставьте <br />
+            дискету, чтобы <br />
+            продолжить
           </p>
-  
         </div>
-        <button  class="dialog__button btn" onclick="window['dialog-save'].close()"  aria-controls="dialog-id" aria-label="Закрыть окно">
+        <button
+          class="dialog__button btn"
+          onclick="window['dialog-save'].close()"
+          aria-controls="dialog-save"
+          aria-label="Закрыть окно"
+        >
           <span class="dialog__button-text">ОК</span>
         </button>
       </dialog>

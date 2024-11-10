@@ -2,7 +2,7 @@
   --main-font: "Inter";
   --main-font-min-wght: 465;
   --main-font-max-wght: 785;
-  
+
   --accent-font: "PressStart2P";
 
   --main-color: #00cc14;
@@ -25,5 +25,5 @@
 
   --duration: 0.3s;
 
-  --sparks: #F00;
+  --sparks: #f00;
 }
