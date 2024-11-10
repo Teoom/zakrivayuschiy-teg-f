@@ -53,6 +53,8 @@ ol {
 }
 
 button {
+  line-height: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -82,4 +84,32 @@ a:focus {
   transform-origin: left center;
   background-color: var(--main-color);
   transition: translate 0.5s ease-in-out;
+}
+
+.grayscale {
+  filter: grayscale(0.8);
+}
+
+.saturate {
+  filter: saturate(3);
+}
+
+.hue-rotate {
+  filter: hue-rotate(30deg);
+}
+
+.invert {
+  filter: invert(85%);
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.blur {
+  filter: blur(20px);
+}
+
+.filter-mix {
+  filter: hue-rotate(97deg) blur(2px) contrast(0.5) saturate(1.2);
 }
