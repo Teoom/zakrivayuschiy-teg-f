@@ -51,3 +51,36 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+button {
+  padding: 0;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow var(--duration) ease;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:focus-visible {
+  box-shadow: 2px 2px var(--main-color);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  translate: -100%;
+  transform-origin: left center;
+  background-color: var(--main-color);
+  transition: translate 0.5s ease-in-out;
+}

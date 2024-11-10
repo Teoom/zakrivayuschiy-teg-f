@@ -1,0 +1,30 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "https://github.com/Teoom/zakrivayuschiy-teg-f.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check ./**/*.{html,css,js}",
+    "format": "prettier --write ./**/*.{html,css,js}",
+    "lint": "stylelint ./**/*.css",
+    "lintfix": "stylelint ./**/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teoom/zakrivayuschiy-teg-f.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teoom/zakrivayuschiy-teg-f/issues"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "stylelint": "^15.4.0"
+  },
+  "homepage": "https://github.com/Teoom/zakrivayuschiy-teg-f#readme"
+}
