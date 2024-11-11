@@ -146,8 +146,8 @@
 .card__label {
   position: absolute;
   z-index: 1;
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
+  inset-block-start: 22px;
+  inset-inline-end: 10px;
   font: 14px/1 "PressStart2P", sans-serif;
   mix-blend-mode: hard-light;
   opacity: 0.5;
@@ -295,13 +295,12 @@
 }
 
 .dialog[open] {
+  inline-size: clamp(341px, calc(100vi - 109px), 357px);
+  max-inline-size: 357px;
+  min-inline-size: 341px;
   background-color: var(--accent-color);
   border: 2px solid var(--main-color);
   padding: 30px clamp(30px, calc(-100vi + 472px), 42px);
-}
-
-.page:has(.dialog[open]) {
-  overflow: hidden;
 }
 
 .dialog__content {
@@ -323,7 +322,8 @@
 }
 
 .dialog__button {
-  inline-size: clamp(257px, calc(100vi - 173px), 293px);
+  inline-size: 100%;
+  /* inline-size: clamp(257px, calc(100vi - 173px), 293px); */
   padding: 12.5px 0;
 }
 
