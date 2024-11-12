@@ -121,7 +121,7 @@
 .main {
   margin: 0 auto;
   inline-size: var(--main-content-inline-size);
-  padding-block-end: 103px;
+  padding-block-end: 100px;
 }
 
 .card {
@@ -146,8 +146,8 @@
 .card__label {
   position: absolute;
   z-index: 1;
-  inset-block-start: 22px;
-  inset-inline-end: 10px;
+  inset-block-start: 25px;
+  inset-inline-end:  clamp(11px, calc(100vi - 419px) , 25px);
   font: 14px/1 "PressStart2P", sans-serif;
   mix-blend-mode: hard-light;
   opacity: 0.5;
@@ -274,7 +274,7 @@
 .button-save {
   background-color: var(--accent-color);
   margin: 0 auto;
-  padding: 14px 19.5px;
+  padding: 16px 19.5px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -306,13 +306,14 @@
 .dialog__content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   margin-block-end: 30px;
-  padding-inline-start: 5px;
+  padding-inline-start: 9px;
 }
 
 .dialog__icon {
-  scale: 1.5;
+  margin-block-start: 6px;
+  scale: 1.85;
 }
 
 .dialog__text {
@@ -323,8 +324,7 @@
 
 .dialog__button {
   inline-size: 100%;
-  /* inline-size: clamp(257px, calc(100vi - 173px), 293px); */
-  padding: 12.5px 0;
+  padding: 10px 0;
 }
 
 .dialog__button-text {
@@ -348,9 +348,8 @@
     margin-block-end: 50px;
   }
 
-  .save-icon,
-  .dialog__icon {
-    scale: 1.5;
+  .save-icon {
+    scale: 1.33;
   }
 
   .button-save {
